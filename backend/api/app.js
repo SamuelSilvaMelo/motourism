@@ -7,3 +7,4 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post('/login', routes.login);
+app.post('/users', routes.createUsers);
