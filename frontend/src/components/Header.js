@@ -7,7 +7,7 @@ function Header() {
   const isMain = () => pathname === '/';
   
   return !isMain() && (
-    <header className="flex justify-between py-4 bg-header-blue">
+    <header className="flex justify-between py-4 bg-blue">
       <div>
         <img src={ Logo } className="w-20 mx-8" alt="Motourism Logo" />
       </div>
