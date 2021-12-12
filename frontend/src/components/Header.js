@@ -3,7 +3,10 @@ import Logo from '../assets/Logo.svg';
 import Menu from '../assets/Menu.svg'
 
 function Header() {
-  return (
+  const { pathname } = window.location;
+  const isMain = () => pathname === '/';
+  
+  return !isMain() && (
     <header className="flex justify-between py-4 bg-header-blue">
       <div>
         <img src={ Logo } className="w-20 mx-8" alt="Motourism Logo" />
