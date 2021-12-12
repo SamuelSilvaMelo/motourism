@@ -27,8 +27,8 @@ function Routes() {
         <Route path="/motorhomes/:id" element={ <MotorhomeDetails /> } />
         <Route exact path="/roteiros" element={ <RoadMaps /> } />
         <Route exact path="/motorhomes" element={ <Motorhomes /> } />
-        <Route path="*" element={ <NotFound /> } />
         <Route exact path="/" element={ <Main /> } />
+        <Route path="*" element={ <NotFound /> } />
       </Switch>
     </BrowserRouter>
   )

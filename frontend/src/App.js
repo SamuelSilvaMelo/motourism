@@ -1,8 +1,12 @@
 import Routes from './Routes';
+import Header from './components/Header';
 
 function App() {
   return (
-    <Routes />
+    <main>
+      <Header />
+      <Routes />
+    </main>
   );
 }
 
