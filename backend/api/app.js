@@ -10,3 +10,5 @@ app.post('/login', routes.login);
 app.post('/users', routes.createUsers);
 app.get('/itineraries', routes.getAllItineraries);
 app.get('/motorhomes', routes.getAllMotorhomes);
+
+module.exports = app;
