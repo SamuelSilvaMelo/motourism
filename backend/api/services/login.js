@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 const jwt = require('jsonwebtoken');
 const loginVerifys = require('../controllers/loginVerifys');
 const findUser = require('../models/login');
 
-const secret = 'mypass';
+const { SECRET } = process.env;
 
 const jwtConfig = {
   expiresIn: '7d',
@@ -15,7 +17,11 @@ module.exports = async (email, password) => {
 
   const userDB = await findUser(email);
 
-  if (userDB && userDB.password === password) return jwt.sign({ data: userDB }, secret, jwtConfig);
+  if (userDB && userDB.password === password) {
+    delete userDB['password']
+    return jwt.sign({ data: userDB }, SECRET, jwtConfig)
+  }
+ 
   
   return { status: 401, message: 'Incorrect username or password' };
 };
