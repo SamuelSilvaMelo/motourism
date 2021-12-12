@@ -18,10 +18,9 @@ module.exports = async (email, password) => {
   const userDB = await findUser(email);
 
   if (userDB && userDB.password === password) {
-    delete userDB['password']
-    return jwt.sign({ data: userDB }, SECRET, jwtConfig)
+    delete userDB.password;
+    return jwt.sign({ data: userDB }, SECRET, jwtConfig);
   }
- 
   
   return { status: 401, message: 'Incorrect username or password' };
 };
