@@ -12,6 +12,8 @@ app.post('/users', routes.createUsers);
 app.get('/itineraries', routes.getAllItineraries);
 app.get('/motorhomes', routes.getAllMotorhomes);
 
+app.use('*', (_req, res) => res.status(404).json({ message: 'Page not found' }));
+
 app.use(errorMiddleware);
 
 module.exports = app;
