@@ -7,6 +7,7 @@
     "start": "node .",
     "dev": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:test": "mocha ./api/tests/**/*$NAME*.{test,spec}.js --exit",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx"
   },
   "keywords": [],
@@ -23,7 +24,7 @@
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "mocha": "^9.1.3",
-    "mongodb-memory-server": "^8.0.4",
+    "mongodb-memory-server": "^6.9.6",
     "nodemon": "^2.0.15",
     "nyc": "^15.1.0",
     "sinon": "^12.0.1"
