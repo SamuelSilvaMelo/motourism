@@ -8,6 +8,7 @@
     "dev": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:test": "mocha ./api/tests/**/*$NAME*.{test,spec}.js --exit",
+    "dev:test:coverage": "nyc --all npm run dev:test",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx"
   },
   "keywords": [],
