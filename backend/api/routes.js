@@ -1,5 +1,6 @@
 const login = require('./controllers/login');
 const createUsers = require('./controllers/createUser');
-const itineraries = require('./controllers/getAllitineraries');
+const getAllItineraries = require('./controllers/getAllitineraries');
+const getAllMotorhomes = require('./controllers/getAllMotorhomes');
 
-module.exports = { login, createUsers, itineraries };
+module.exports = { login, createUsers, getAllItineraries, getAllMotorhomes };
