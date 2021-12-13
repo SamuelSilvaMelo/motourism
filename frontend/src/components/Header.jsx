@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/Logo.svg';
 import MenuButton from '../assets/MenuButton.png';
 
@@ -15,7 +15,7 @@ const Header = () => {
       path: '/about',
     },
   ];
-  const { pathname } = window.location;
+  const { pathname } = useLocation();
   const isMain = () => pathname === '/';
 
   return !isMain() && (
