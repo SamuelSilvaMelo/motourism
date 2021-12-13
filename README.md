@@ -46,6 +46,8 @@ A prototipagem foi feita no Figma:
 
 ![figma](https://user-images.githubusercontent.com/78225894/145875236-3e90864c-2c02-4396-ab0f-8b10b5aa8dda.png)
 
+### Organização && divisão das features:
+
 A organização das features foram divididas no Trello:
 
 ![trello-motourism](https://user-images.githubusercontent.com/78225894/145875328-a24e1ad7-dd69-4ba5-821f-808eeac9fb90.png)
