@@ -16,6 +16,14 @@ const LoginForm = () => {
     });
   };
 
+  const createLogin = () => {
+    motourismAPI.login(user)
+    .then((token) => {
+      localStorage.setItem('token', token);
+      useHistory().push('/fechar-pacote');
+    })
+  }
+
   return (
     <div className="flex flex-col items-center justify-center w-full p-2 m-5">
       <h1 className="text-center text-3xl">Login</h1>
@@ -52,7 +60,7 @@ const LoginForm = () => {
           style={{ backgroundColor: '#C18C5D' }}
           className="bg-yellow-500 font-bold py-2 px-8 rounded text-lg m-4 font-bold"
           type="button"
-          onClick={() => motourismAPI.login(user)}
+          onClick={createLogin}
         >
           Entrar
         </button>
