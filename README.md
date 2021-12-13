@@ -30,7 +30,7 @@ Criamos um produto onde carregamos a missão de proporcionar uma experiência ú
 
 Unimos as maravilhas do Eco Turismo com o aconchego do Motor Home.
 
-Prazer, somos o Motourism (aqui vai o link da aplicação ou um gif/video da aplicação rodando).
+Prazer, somos o Motourism.
 
 ![otimized-gif](https://user-images.githubusercontent.com/78225894/145897892-78a0bcda-11da-47ef-9cf6-5148e16b4410.gif)
 
