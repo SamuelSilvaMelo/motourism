@@ -60,4 +60,4 @@ Utilizamos o MongoDB para estruturar o Banco de Dados, construindo uma API REST 
 
 ### Front-end:
 
-O Front foi desenvolvido em React, aplicando o conceito Mobile First, onde o protótipo foi desenvolvido de inicio na versão mobile.
+O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile First, onde o protótipo foi desenvolvido de inicio na versão mobile.
