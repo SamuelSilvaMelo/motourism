@@ -12,13 +12,11 @@ import Motorhomes from './pages/Motorhomes';
 import MotorhomeDetails from './pages/Motorhomes/Details';
 
 import Login from './pages/User/Login';
-import Register from './pages/User/Register';
 import Package from './pages/User/Package';
 
 const Routes = () => (
   <Switch>
     <Route exact path="/login" element={<Login />} />
-    <Route exact path="/register" element={<Register />} />
     <Route exact path="/meu-roteiro" element={<Favs />} />
     <Route exact path="/fechar-pacote" element={<Package />} />
     <Route path="/roteiros/:id" element={<RoadMapDetails />} />
