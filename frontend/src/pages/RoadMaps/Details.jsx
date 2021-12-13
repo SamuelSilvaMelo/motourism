@@ -1,12 +1,15 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-function MotorhomeDetails() {
+const RoadMapDetails = () => {
   const { id } = useParams();
 
   return (
-    <h1>Motorhome { id }</h1>
-  )
-}
+    <h1>
+      Detalhes
+      { id }
+    </h1>
+  );
+};
 
-export default MotorhomeDetails;
+export default RoadMapDetails;
