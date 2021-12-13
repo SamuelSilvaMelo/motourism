@@ -36,7 +36,11 @@ Prazer, somos o Motourism (aqui vai o link da aplicação ou um gif/video da apl
 
 ## Comunicação && Organização:
 
+### Comunicação:
+
 Nossa comunicação foi feita através do Zoom e Slack que foram oferecidos pela <a href="https://app.betrybe.com/">Trybe</a>.
+
+### Prototipagem:
 
 A prototipagem foi feita no Figma:
 
