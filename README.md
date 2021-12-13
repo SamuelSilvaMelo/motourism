@@ -8,7 +8,7 @@ O projeto foi proposto pela Hackathon entre as turmas 11 e 12 da <a href="https:
 
 ![desafio2](https://user-images.githubusercontent.com/78225894/145867515-b8401fac-bfcc-4ed2-a63e-fd0870b9c82a.png)
 
-## Equipe:
+## Equipe 4:
 
 <a href="https://www.linkedin.com/in/danielbped/">Daniel Batista</a>
 
