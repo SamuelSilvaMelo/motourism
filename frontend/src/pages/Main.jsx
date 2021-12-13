@@ -4,6 +4,7 @@ import logo from '../assets/Logo.svg';
 import scrollingIcon from '../assets/scrollingIcon.png';
 import bg1 from '../assets/bg1.png';
 import bg2 from '../assets/bg2.png';
+import bg3 from '../assets/bg3.png';
 import '../styles/Main.css';
 
 const Main = () => (
@@ -29,6 +30,10 @@ const Main = () => (
         <div className="Second-img-text">
           <p>Motorhomes confortáveis</p>
         </div>
+      </div>
+      <p>Sem burocracia</p>
+      <div className="Third-img">
+        <img className="Bg3" src={bg3} alt="Bg3" />
       </div>
     </section>
   </div>
