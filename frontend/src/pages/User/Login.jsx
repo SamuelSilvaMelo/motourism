@@ -3,41 +3,108 @@ import User from '../../assets/User.png';
 import Password from '../../assets/Password.png';
 
 const Login = () => (
-  <div>
-    <div>
-      <h1>Login</h1>
-      <form>
-        <label htmlFor="email">
-          <img width="30" src={User} alt="User icon" />
-          <input id="email" type="email" placeholder="E-mail" />
+  <div
+    style={{
+      fontFamily: 'Abhaya Libre, serif',
+      color: '#211A1D',
+      backgroundColor: '#F8F0FB',
+    }}
+    className="flex flex-col items-center"
+  >
+    <div className="flex flex-col items-center justify-center w-full p-2 m-5">
+      <h1 className="text-center text-3xl">Login</h1>
+      <form className="flex flex-col items-center justify-center w-full p-2">
+        <label
+          className="flex items-center justify-center m-4 border-2 border-gray-400 rounded-lg"
+          htmlFor="email"
+        >
+          <img width="30" className="m-2" src={User} alt="User icon" />
+          <input
+            style={{ background: 'none' }}
+            id="email"
+            type="email"
+            placeholder="E-mail"
+          />
         </label>
-        <label htmlFor="password">
-          <img width="30" src={Password} alt="Password icon" />
-          <input id="password" type="password" placeholder="Senha" />
+        <label
+          htmlFor="password"
+          className="flex items-center justify-center m-4 border-2 border-gray-400 rounded-lg"
+        >
+          <img width="30" src={Password} className="m-2" alt="Password icon" />
+          <input
+            style={{ background: 'none' }}
+            id="password"
+            type="password"
+            placeholder="Senha"
+          />
         </label>
-        <button type="button">Entrar</button>
+        <button
+          style={{ backgroundColor: '#C18C5D' }}
+          className="bg-yellow-500 font-bold py-2 px-8 rounded text-lg m-4 font-bold"
+          type="button"
+        >
+          Entrar
+        </button>
       </form>
     </div>
-    <div>
-      <h1>Ou criar conta</h1>
-      <form>
-        <label htmlFor="create-email">
-          <img width="30" src={User} alt="User icon" />
-          <input id="create-email" type="email" placeholder="E-mail" />
+    <div className="flex flex-col items-center justify-center w-full p-2 mb-5">
+      <h1 className="text-center text-2xl">Ou criar conta</h1>
+      <form className="flex flex-col items-center justify-center w-full p-2">
+        <label
+          className="flex items-center justify-center m-4 border-2 border-gray-400 rounded-lg"
+          htmlFor="create-email"
+        >
+          <img className="m-2" width="30" src={User} alt="User icon" />
+          <input
+            style={{ background: 'none' }}
+            id="create-email"
+            type="email"
+            placeholder="E-mail"
+          />
         </label>
-        <label htmlFor="create-name">
-          <img width="30" src={User} alt="User icon" />
-          <input id="create-name" type="text" placeholder="Nome" />
+        <label
+          className="flex items-center justify-center m-4 border-2 border-gray-400 rounded-lg"
+          htmlFor="create-name"
+        >
+          <img className="m-2" width="30" src={User} alt="User icon" />
+          <input
+            style={{ background: 'none' }}
+            id="create-name"
+            type="text"
+            placeholder="Nome"
+          />
         </label>
-        <label htmlFor="create-password">
-          <img width="30" src={Password} alt="Password icon" />
-          <input id="create-password" type="password" placeholder="Senha" />
+        <label
+          className="flex items-center justify-center m-4 border-2 border-gray-400 rounded-lg"
+          htmlFor="create-password"
+        >
+          <img className="m-2" width="30" src={Password} alt="Password icon" />
+          <input
+            style={{ background: 'none' }}
+            id="create-password"
+            type="password"
+            placeholder="Senha"
+          />
         </label>
-        <label htmlFor="create-confirm-password">
-          <img width="30" src={Password} alt="Password icon" />
-          <input id="create-confirm-password" type="password" placeholder="Confirmar senha" />
+        <label
+          className="flex items-center justify-center m-4 border-2 border-gray-400 rounded-lg"
+          htmlFor="create-confirm-password"
+        >
+          <img className="m-2" width="30" src={Password} alt="Password icon" />
+          <input
+            style={{ background: 'none' }}
+            id="create-confirm-password"
+            type="password"
+            placeholder="Confirmar senha"
+          />
         </label>
-        <button type="button">Entrar</button>
+        <button
+          className="bg-yellow-500 font-bold py-2 px-8 rounded text-lg m-4 font-bold"
+          style={{ backgroundColor: '#C18C5D' }}
+          type="button"
+        >
+          Criar
+        </button>
       </form>
     </div>
   </div>
