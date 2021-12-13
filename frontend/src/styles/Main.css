@@ -37,3 +37,15 @@
     right: 0;
     bottom: 0;
 }
+
+.Second-section {
+    background: linear-gradient(180deg, #A9C5C9 0%, #F9FFD9 100%);
+    transform: rotate(-0.12deg);
+}
+
+.Second-section p {
+    color: #603E3E;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
