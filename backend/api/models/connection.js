@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { MongoClient } = require('mongodb');
 
 const OPTIONS = {
@@ -19,4 +20,4 @@ const connection = () => (
       })
 );
 
-module.exports = { connection };
+module.exports = connection;
