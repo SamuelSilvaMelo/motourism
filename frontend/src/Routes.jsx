@@ -6,7 +6,6 @@ import NotFound from './pages/NotFound';
 
 import RoadMaps from './pages/RoadMaps';
 import RoadMapDetails from './pages/RoadMaps/Details';
-import Favs from './pages/RoadMaps/Favs';
 
 import Motorhomes from './pages/Motorhomes';
 import MotorhomeDetails from './pages/Motorhomes/Details';
@@ -17,7 +16,6 @@ import Package from './pages/User/Package';
 const Routes = () => (
   <Switch>
     <Route exact path="/login" element={<Login />} />
-    <Route exact path="/meu-roteiro" element={<Favs />} />
     <Route exact path="/fechar-pacote" element={<Package />} />
     <Route path="/roteiros/:id" element={<RoadMapDetails />} />
     <Route path="/motorhomes/:id" element={<MotorhomeDetails />} />
