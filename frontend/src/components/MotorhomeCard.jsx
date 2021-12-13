@@ -10,7 +10,7 @@ const MotorhomeCard = ({ motorhome }) => {
 
   function renderCard() {
     return (
-      <Link to={`/roteiros/${id}`}>
+      <Link to={`/motorhomes/${id}`}>
         <div
           style={{
             backgroundImage: `url("${imgs[0]}")`,
