@@ -17,7 +17,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "craco --openssl-legacy-provider start",
     "build": "craco build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +39,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0"
   }
 }
