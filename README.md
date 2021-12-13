@@ -66,6 +66,8 @@ O deploy foi feito no Heroku.
 
 O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile First, onde o protótipo foi desenvolvido de inicio na versão mobile.
 
+A cobertura de testes do Front foi feita com a React Testing Library.
+
 ## Instruções para rodar o projeto:
 1. Clone o repositório:
 
