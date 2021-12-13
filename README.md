@@ -27,6 +27,7 @@ Nossa ideia partiu de um propósito em movimentar o Eco Turismo.
 "Conhecido e exaltado por suas belezas naturais e culturais pelo mundo afora, o Brasil foi o destino escolhido por cerca de 19 milhões de estrangeiros nos últimos três anos, de acordo com o Ministério do Turismo. E neste setor uma modalidade vem tomando frente: o ecoturismo (ou turismo ecológico). Ele foi o motivo de viagem de 18,6% destes turistas, que saíram de suas casas em busca de cenários paradisíacos, com fauna e flora tão próprios que só o país com uma das maiores biodiversidades do mundo possui." Fonte: <a href="https://viagemegastronomia.cnnbrasil.com.br/noticias/ecoturismo-no-brasil-a-tendencia-que-veio-para-ficar-no-pos-pandemia/">CNN</a>
 
 Criamos um produto onde carregamos a missão de proporcionar uma experiência única de poder estacionar sua "casa" por uns dias nos lugares mais paradisíacos de todo Brasil.
+
 Unimos as maravilhas do Eco Turismo com o aconchego do Motor Home.
 
 Prazer, somos o Motourism (aqui vai o link da aplicação ou um gif/video da aplicação rodando).
