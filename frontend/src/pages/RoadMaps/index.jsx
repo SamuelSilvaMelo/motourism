@@ -1,9 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import RoadMapCard from '../../components/RoadMapCard';
 import MouturismDataContext from '../../context/MouturismDataContext';
+import motourismAPI from '../../services/motourismAPI';
 
 const RoadMaps = () => {
-  const { roadMaps } = useContext(MouturismDataContext);
+  const { roadMaps, setRoadMaps } = useContext(MouturismDataContext);
+
+  useEffect(() => {
+    motourismAPI.itineraries()
+      .then((response) => setRoadMaps(response));
+  }, []);
 
   return (
     <main
@@ -27,8 +33,23 @@ const RoadMaps = () => {
           <h2 className="my-8 text-2xl">
             Sugestões de roteiro
           </h2>
-          {roadMaps.map((roadMap) => (
-            <RoadMapCard key={roadMap.id} roadMap={roadMap} />
+          {roadMaps.map(({
+            _id,
+            imgs,
+            name,
+            totalDistance,
+            time,
+          }) => (
+            <RoadMapCard
+              key={_id}
+              roadMap={{
+                _id,
+                imgs,
+                name,
+                totalDistance,
+                time,
+              }}
+            />
           ))}
         </div>
       </div>
