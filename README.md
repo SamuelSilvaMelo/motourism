@@ -60,7 +60,7 @@ A organização das features foram divididas no Trello:
 
 Utilizamos o MongoDB para estruturar o Banco de Dados, construindo uma API REST aplicando todo conceito de MSC.
 
-O deploy foi feito no Heroku.
+O deploy foi feito no Heroku: <a href="https://motourism-backend.herokuapp.com ">API</a>.
 
 ### Front-end:
 
