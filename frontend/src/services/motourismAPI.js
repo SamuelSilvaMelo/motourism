@@ -8,5 +8,8 @@ export default {
     .catch((err) => console.log(err)),
   itineraries: () => axios.get(`${URL}/itineraries`)
     .then(({ data }) => data)
-    .catch((err) => err),
+    .catch((err) => alert(err)),
+  getMotorhomes: () => axios.get(`${URL}/motorhomes`)
+    .then((res) => res.data)
+    .catch((err) => alert(err)),
 };

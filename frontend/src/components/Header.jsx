@@ -27,8 +27,9 @@ const Header = () => {
         <Link to="/">
           <img
             src={Logo}
-            alt="Logo moutorism"
-            style={{ width: '100px', height: 'auto', marginLeft: '20px' }}
+            alt="Logo motourism"
+            className="m-2"
+            style={{ width: '80px', height: 'auto', marginLeft: '20px' }}
           />
         </Link>
         <button
