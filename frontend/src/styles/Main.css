@@ -1,0 +1,105 @@
+.Background-img {
+    position: relative;
+}
+
+.First-section-infos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.Logo {
+    width: 350px;
+}
+
+.Button {
+    background-color: #C18C5D;
+    border-radius: 25px;
+    padding: 15px;
+    color: black;
+    width: 192px;
+    height: 49px;
+    font-weight: bold;
+}
+
+.Scrolling-icon {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.Second-section {
+    background: linear-gradient(180deg, #A9C5C9 0%, #F9FFD9 100%);
+    transform: rotate(-0.12deg);
+}
+
+.Second-section p {
+    color: #603E3E;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    font-family: Abhaya Libre, serif;
+}
+
+.Bg1 {
+    width: 383px;
+    height: 381px;
+    margin: auto;
+    left: 0;
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+
+.Bg2 {
+    width: 383px;
+    height: 381px;
+    margin: auto;
+    left: 0;
+    border-radius: 60px;
+}
+
+.First-img p {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    font-weight: 700;
+    font-family: Abhaya Libre, serif;
+    font-size: 30px;
+    line-height: 35.39px;
+    color: #603E3E
+}
+
+.Second-img p {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 550px;
+    font-weight: 700;
+    font-family: Abhaya Libre, serif;
+    font-size: 30px;
+    line-height: 35.39px;
+    color: #603E3E
+}
+
+.First-img-text {
+    background-color: #C18C5D;
+}
+
+.Second-img-text {
+    background-color: #C18C5D;
+}
