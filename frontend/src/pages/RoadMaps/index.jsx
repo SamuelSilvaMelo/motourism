@@ -2,24 +2,6 @@ import React, { useContext } from 'react';
 import RoadMapCard from '../../components/RoadMapCard';
 import MouturismDataContext from '../../context/MouturismDataContext';
 
-<<<<<<< HEAD
-const RoadMaps = () => (
-  <main>
-    <h1>Roteiros</h1>
-    <div>
-      <p>
-        Aqui você pode encontrar roteiros prontos
-        incríveis ou ainda pesquisar destinos para seu roteiro personalizado
-      </p>
-      <div>
-        <h2>
-          Sugestões de roteiro
-        </h2>
-      </div>
-    </div>
-  </main>
-);
-=======
 const RoadMaps = () => {
   const { roadMaps } = useContext(MouturismDataContext);
 
@@ -53,6 +35,5 @@ const RoadMaps = () => {
     </main>
   );
 };
->>>>>>> frontend-roteiros-prontos
 
 export default RoadMaps;

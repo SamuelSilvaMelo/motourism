@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
 import { Link, useLocation } from 'react-router-dom';
-=======
-import { Link } from 'react-router-dom';
->>>>>>> frontend-login
 import Logo from '../assets/Logo.svg';
 import MenuButton from '../assets/MenuButton.png';
 
