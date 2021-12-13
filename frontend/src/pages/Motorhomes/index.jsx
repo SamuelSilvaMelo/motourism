@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import MotorhomeCard from '../../components/MotorhomeCard';
 import MouturismDataContext from '../../context/MouturismDataContext';
-import '../../styles/Motorhomes.css';
 
 const Motorhomes = () => {
   const { motorhomes } = useContext(MouturismDataContext);
