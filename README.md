@@ -64,11 +64,16 @@ O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile Fi
 
 ## Instruções para rodar o projeto:
 1. Clone o repositório:
+
  * `git clone git@github.com:SamuelSilvaMelo/motourism.git`
+ * 
 2. Entre na pasta do repositório que você acabou de clonar:
+
     * `cd motourism`
     * `cd frontend`
+
 3. Instale as dependências e inicialize o projeto
+
   * Instale as dependências:
     * `npm install`
   * Inicialize o projeto:
