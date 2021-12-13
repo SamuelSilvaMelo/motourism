@@ -2,16 +2,16 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './Routes';
 import Header from './components/Header';
-import DataProvider from './context/DataProvider';
+import MouturismDataProvider from './context/MouturismDataProvider';
 
 const App = () => (
   <BrowserRouter>
-    <DataProvider>
+    <MouturismDataProvider>
       <main>
         <Header />
         <Routes />
       </main>
-    </DataProvider>
+    </MouturismDataProvider>
   </BrowserRouter>
 );
 
