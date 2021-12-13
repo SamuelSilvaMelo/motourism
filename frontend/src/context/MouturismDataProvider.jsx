@@ -4,8 +4,10 @@ import MouturismDataContext from './MouturismDataContext';
 import motourismAPI from '../services/motourismAPI';
 
 const DataProvider = ({ children }) => {
+
   const [roadMaps, setRoadMaps] = useState([{}]);
   const [motorhomes, setMotorhomes] = useState([{}]);
+
 
   const contextValue = useMemo(() => ({
     roadMaps,
