@@ -68,11 +68,17 @@ Endpoints:
 
 <a href="https://motourism-backend.herokuapp.com/itineraries">Itinerários</a>
 
+Utilizamos a biblioteca BCrypt para criptografar os dados sensíveis.
+
+Para os testes, utilizamos as librarys: MOCHA, CHAI, SINON.
+
 ### Front-end:
 
 O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile First, onde o protótipo foi desenvolvido de inicio na versão mobile.
 
 A cobertura de testes do Front foi feita com a React Testing Library.
+
+![image (1)](https://user-images.githubusercontent.com/78225894/145903179-68f5f67e-b8af-4849-b363-86054a711828.png)
 
 ## Instruções para rodar o projeto:
 1. Clone o repositório:
