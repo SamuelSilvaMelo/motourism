@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MotorhomeCard = ({ img, key }) => (
+const MotorhomeDetailsCard = ({ img, key }) => (
   <img
     src={img}
     alt="Motorhome"
@@ -10,9 +10,9 @@ const MotorhomeCard = ({ img, key }) => (
   />
 );
 
-MotorhomeCard.propTypes = {
+MotorhomeDetailsCard.propTypes = {
   img: PropTypes.string.isRequired,
   key: PropTypes.string.isRequired,
 };
 
-export default MotorhomeCard;
+export default MotorhomeDetailsCard;

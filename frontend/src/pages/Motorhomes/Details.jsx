@@ -2,7 +2,7 @@
 /* eslint-disable import/no-named-as-default */
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import MotorhomeCard from '../../components/MotorhomeCard';
+import MotorhomeDetailsCard from '../../components/MotorhomeDetailsCard';
 import Star from '../../assets/Star.svg';
 import Button from '../../components/Button';
 import Loading from '../../components/Loading';
@@ -45,7 +45,7 @@ const MotorhomeDetails = () => {
     <main className="text-center flex flex-col items-center font-default text-xl">
       <h1 className="text-center text-3xl my-6">{ name }</h1>
       <p className="m-6">{ description }</p>
-      { imgs.map((img, index) => <MotorhomeCard key={`${_id + index}`} img={img} />) }
+      { imgs.map((img, index) => <MotorhomeDetailsCard key={`${_id + index}`} img={img} />) }
       <div className="flex w-18 justify-center py-2 px-2 font-bold">
         <img
           src={Star}
