@@ -50,3 +50,56 @@
     text-align: center;
     font-family: Abhaya Libre, serif;
 }
+
+.Bg1 {
+    width: 383px;
+    height: 381px;
+    margin: auto;
+    left: 0;
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+
+.Bg2 {
+    width: 383px;
+    height: 381px;
+    margin: auto;
+    left: 0;
+    border-radius: 60px;
+}
+
+.First-img p {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    font-weight: 700;
+    font-family: Abhaya Libre, serif;
+    font-size: 30px;
+    line-height: 35.39px;
+    color: #603E3E
+}
+
+.Second-img p {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 550px;
+    font-weight: 700;
+    font-family: Abhaya Libre, serif;
+    font-size: 30px;
+    line-height: 35.39px;
+    color: #603E3E
+}
+
+.First-img-text {
+    background-color: #C18C5D;
+}
+
+.Second-img-text {
+    background-color: #C18C5D;
+}
