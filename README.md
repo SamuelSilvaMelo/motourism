@@ -34,7 +34,7 @@ Prazer, somos o Motourism (aqui vai o link da aplicação ou um gif/video da apl
 
 ## Desenvolvimento:
 
-## Comunicação && Organização:
+## Comunicação, prototipagem e organização:
 
 ### Comunicação:
 
