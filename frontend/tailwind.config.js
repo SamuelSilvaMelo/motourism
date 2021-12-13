@@ -1,13 +1,13 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx}",
+    './src/**/*.{js,jsx}',
   ],
   theme: {
     extend: {
       colors: {
-        'header-blue': '#00B4D8'
-      }
+        'header-blue': '#00B4D8',
+      },
     },
   },
   plugins: [],
-}
+};
