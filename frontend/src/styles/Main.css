@@ -29,3 +29,11 @@
     height: 49px;
     font-weight: bold;
 }
+
+.Scrolling-icon {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
