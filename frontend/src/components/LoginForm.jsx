@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import User from '../assets/User.png';
 import Password from '../assets/Password.png';
 import motourismAPI from '../services/motourismAPI';
@@ -8,12 +9,21 @@ const LoginForm = () => {
     email: '',
     password: '',
   });
+  const navigate = useNavigate();
 
   const handleLoginInputChange = (e) => {
     setUser({
       ...user,
       [e.target.name]: e.target.value,
     });
+  };
+
+  const createLogin = async () => {
+    const token = await motourismAPI.login(user);
+    if (token) {
+      localStorage.setItem('token', token);
+      navigate('/fechar-pacote');
+    }
   };
 
   return (
@@ -52,7 +62,7 @@ const LoginForm = () => {
           style={{ backgroundColor: '#C18C5D' }}
           className="bg-yellow-500 font-bold py-2 px-8 rounded text-lg m-4 font-bold"
           type="button"
-          onClick={() => motourismAPI.login(user)}
+          onClick={createLogin}
         >
           Entrar
         </button>
