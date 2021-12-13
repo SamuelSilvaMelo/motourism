@@ -6,4 +6,4 @@ O projeto foi proposto pela Hackathon entre as turmas 11 e 12 da <a href="https:
 
 ## O tema escolhido foi:
 
-![desafio2](https://user-images.githubusercontent.com/78225894/145867177-3a6d312a-1375-4eea-b1be-64a81326cf32.png)
+![desafio2](https://user-images.githubusercontent.com/78225894/145867515-b8401fac-bfcc-4ed2-a63e-fd0870b9c82a.png)
