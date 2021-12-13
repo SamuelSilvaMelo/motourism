@@ -1,30 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/Logo.svg';
 import MenuButton from '../assets/MenuButton.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const links = [
-    {
-      name: 'Home',
-      path: '/',
-    },
-    {
-      name: 'Roteiros',
-      path: '/roteiros',
-    },
-    {
-      name: 'Motorhomes',
-      path: '/motorhomes',
-    },
-    {
-      name: 'Meu Pacote',
-      path: '/about',
-    },
+  const defaultLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'Roteiros', path: '/roteiros' },
+    { name: 'Motorhomes', path: '/motorhomes' },
+    { name: 'Meu Pacote', path: '/about' },
   ];
+  const [links, setLinks] = useState(defaultLinks);
   const { pathname } = useLocation();
+
+  function logout() {
+    localStorage.removeItem('token');
+    window.location.reload();
+  }
+
+  const loginLink = {
+    name: 'Login',
+    path: '/login',
+    onclick: () => setLinks([...defaultLinks, loginLink]),
+  };
+
   const isMain = () => pathname === '/';
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setLinks(defaultLinks);
+    } else {
+      setLinks([...defaultLinks, loginLink]);
+    }
+  }, []);
 
   return !isMain() && (
     <header
@@ -66,6 +76,7 @@ const Header = () => {
               key={link.name}
               to={link.path}
               className="block px-4 py-2"
+              onClick={link.onClick ? link.onClick : () => setIsOpen(false)}
               style={{
                 color: '#F8F0FB',
                 textDecoration: 'none',
@@ -81,6 +92,21 @@ const Header = () => {
             ) : null}
           </>
         ))}
+        {links.some(({ name }) => name === 'Login') ? null : (
+          <>
+            <fieldset style={{
+              backgroundColor: '#F8F0FB', height: '1px', width: '50%', marginLeft: '10px',
+            }}
+            />
+            <button
+              className="block px-4 py-2"
+              onClick={logout}
+              type="button"
+            >
+              Sair
+            </button>
+          </>
+        )}
       </nav>
     </header>
   );
