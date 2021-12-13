@@ -34,8 +34,6 @@ describe('When requesting the list of motorhomes in GET /motorhomes', () => {
     it('Returns list with all motorhomes', async () => {
       const response = await chai.request(server).get('/motorhomes');
 
-      console.log(response.body[0])
-
       expect(response).to.have.status(200);
       expect(response.body).to.be.an('array');
       expect(response.body).to.have.lengthOf(3);
