@@ -66,7 +66,7 @@ O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile Fi
 1. Clone o repositório:
 
  * `git clone git@github.com:SamuelSilvaMelo/motourism.git`
- * 
+ 
 2. Entre na pasta do repositório que você acabou de clonar:
 
     * `cd motourism`
