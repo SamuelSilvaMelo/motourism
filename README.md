@@ -26,7 +26,21 @@ Nossa ideia partiu de um propósito em movimentar o Eco Turismo.
 
 "Conhecido e exaltado por suas belezas naturais e culturais pelo mundo afora, o Brasil foi o destino escolhido por cerca de 19 milhões de estrangeiros nos últimos três anos, de acordo com o Ministério do Turismo. E neste setor uma modalidade vem tomando frente: o ecoturismo (ou turismo ecológico). Ele foi o motivo de viagem de 18,6% destes turistas, que saíram de suas casas em busca de cenários paradisíacos, com fauna e flora tão próprios que só o país com uma das maiores biodiversidades do mundo possui." Fonte: <a href="https://viagemegastronomia.cnnbrasil.com.br/noticias/ecoturismo-no-brasil-a-tendencia-que-veio-para-ficar-no-pos-pandemia/">CNN</a>
 
-Criamos um produto onde carregamos a missão de proporcionar uma experiência única de poder estacionar por uns dias sua "casa" nos lugares mais paradisíacos de todo Brasil.
+Criamos um produto onde carregamos a missão de proporcionar uma experiência única de poder estacionar sua "casa" por uns dias nos lugares mais paradisíacos de todo Brasil.
 Unimos as maravilhas do Eco Turismo com o aconchego do Motor Home.
 
 Prazer, somos o Motourism (aqui vai o link da aplicação ou um gif/video da aplicação rodando).
+
+## Desenvolvimento:
+
+Nossa comunicação foi feita através do Zoom e Slack que foram oferecidos pela <a href="https://app.betrybe.com/">Trybe</a>.
+
+A prototipagem foi feita no Figma:
+
+![figma](https://user-images.githubusercontent.com/78225894/145875236-3e90864c-2c02-4396-ab0f-8b10b5aa8dda.png)
+
+A organização das features foram divididas no Trello:
+
+![trello-motourism](https://user-images.githubusercontent.com/78225894/145875328-a24e1ad7-dd69-4ba5-821f-808eeac9fb90.png)
+
+
