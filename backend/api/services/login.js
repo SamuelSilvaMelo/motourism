@@ -12,6 +12,7 @@ const jwtConfig = {
 };
 
 module.exports = async (email, password) => {
+  console.log(0);
   const verifys = loginVerifys(email, password);
   if (verifys) return verifys;
 

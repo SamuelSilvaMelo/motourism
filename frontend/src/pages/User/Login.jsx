@@ -1,7 +1,19 @@
 import React from 'react';
+import LoginForm from '../../components/LoginForm';
+import RegisterForm from '../../components/RegisterForm';
 
 const Login = () => (
-  <h1>Login</h1>
+  <div
+    style={{
+      fontFamily: 'Abhaya Libre, serif',
+      color: '#211A1D',
+      backgroundColor: '#F8F0FB',
+    }}
+    className="flex flex-col items-center"
+  >
+    <LoginForm />
+    <RegisterForm />
+  </div>
 );
 
 export default Login;
