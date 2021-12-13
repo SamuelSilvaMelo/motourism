@@ -58,6 +58,8 @@ A organização das features foram divididas no Trello:
 
 Utilizamos o MongoDB para estruturar o Banco de Dados, construindo uma API REST aplicando todo conceito de MSC.
 
+O deploy foi feito no Heroku.
+
 ### Front-end:
 
 O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile First, onde o protótipo foi desenvolvido de inicio na versão mobile.
