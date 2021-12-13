@@ -34,6 +34,8 @@ Prazer, somos o Motourism (aqui vai o link da aplicação ou um gif/video da apl
 
 ## Desenvolvimento:
 
+## Comunicação && Organização:
+
 Nossa comunicação foi feita através do Zoom e Slack que foram oferecidos pela <a href="https://app.betrybe.com/">Trybe</a>.
 
 A prototipagem foi feita no Figma:
@@ -44,4 +46,12 @@ A organização das features foram divididas no Trello:
 
 ![trello-motourism](https://user-images.githubusercontent.com/78225894/145875328-a24e1ad7-dd69-4ba5-821f-808eeac9fb90.png)
 
+## Desenvolvimento Técnico:
 
+### Back-end:
+
+Utilizamos o MongoDB para estruturar o Banco de Dados, construindo uma API REST aplicando todo conceito de MSC.
+
+### Front-end:
+
+O Front foi desenvolvido em React, aplicando o conceito Mobile First, onde o protótipo foi desenvolvido de inicio na versão mobile.
