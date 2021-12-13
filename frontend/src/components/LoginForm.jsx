@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import User from '../assets/User.png';
 import Password from '../assets/Password.png';
 import motourismAPI from '../services/motourismAPI';
@@ -8,6 +9,7 @@ const LoginForm = () => {
     email: '',
     password: '',
   });
+  const navigate = useNavigate();
 
   const handleLoginInputChange = (e) => {
     setUser({
@@ -16,13 +18,13 @@ const LoginForm = () => {
     });
   };
 
-  const createLogin = () => {
-    motourismAPI.login(user)
-    .then((token) => {
+  const createLogin = async () => {
+    const token = await motourismAPI.login(user);
+    if (token) {
       localStorage.setItem('token', token);
-      useHistory().push('/fechar-pacote');
-    })
-  }
+      navigate('/fechar-pacote');
+    }
+  };
 
   return (
     <div className="flex flex-col items-center justify-center w-full p-2 m-5">
