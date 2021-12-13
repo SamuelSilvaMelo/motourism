@@ -84,11 +84,10 @@ describe('When logging a user into the POST login/ route', () => {
     });
   
     it('It is possible to login successfully', async () => {
-      await connectionMock.db('Motourism').collection('users').insertOne({
+      await chai.request(server).post('/users').send({
         name: 'User-Tryber',
         email: 'trybe@betrybe.com',
         password: '1234567',
-        role: 'user',
       });
 
       const response = await chai.request(server).post('/login').send({
