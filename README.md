@@ -11,9 +11,13 @@ O projeto foi proposto pela Hackathon entre as turmas 11 e 12 da <a href="https:
 ## Equipe:
 
 <a href="https://www.linkedin.com/in/danielbped/">Daniel Batista</a>
+
 <a href="https://www.linkedin.com/in/douglasdns/">Douglas Santana</a>
+
 <a href="https://www.linkedin.com/in/gui-pereira/">Guilherme Pereira</a>
+
 <a href="https://www.linkedin.com/in/luisffg/">Luis Fernando Fonseca</a>
+
 <a href="https://www.linkedin.com/in/samuel-silva-melo/">Samuel Melo</a>
 
 ## A ideia:
