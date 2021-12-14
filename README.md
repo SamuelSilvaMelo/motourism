@@ -99,7 +99,7 @@ A organização das features foram divididas no Trello:
 
 ### Back-end:
 
-Utilizamos o MongoDB para estruturar o Banco de Dados, construindo uma API REST aplicando todo conceito de MSC.
+Utilizamos o MongoDB para estruturar o Banco de Dados, e o NodeJs como linguagem, construindo uma API REST aplicando todo conceito de MSC.
 
 O deploy foi feito no Heroku.
 
