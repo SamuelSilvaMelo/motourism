@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LoginForm from '../../components/LoginForm';
 import RegisterForm from '../../components/RegisterForm';
-import ErrorAdvice from '../../components/ErrorAdvice';
+import AdvicesPopup from '../../components/AdvicesPopup';
 
 const Login = () => {
   const [showErrorAdvice, setShowErrorAdvice] = useState(false);
@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <>
       {showErrorAdvice && (
-      <ErrorAdvice
+      <AdvicesPopup
         message={errorMessage}
         close={() => setShowErrorAdvice(false)}
       />

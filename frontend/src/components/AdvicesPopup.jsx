@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ErrorAdvice = ({ message, close }) => (
+const AdvicesPopup = ({ message, close }) => (
   <div
     className="absolute w-full h-full flex justify-center items-start"
     style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}
@@ -22,9 +22,9 @@ const ErrorAdvice = ({ message, close }) => (
   </div>
 );
 
-ErrorAdvice.propTypes = {
+AdvicesPopup.propTypes = {
   message: PropTypes.string.isRequired,
   close: PropTypes.func.isRequired,
 };
 
-export default ErrorAdvice;
+export default AdvicesPopup;
