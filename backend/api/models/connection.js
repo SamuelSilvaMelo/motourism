@@ -7,7 +7,6 @@ const OPTIONS = {
 };
 
 const MONGO_DB_URL = process.env.DB_URL;
-
 let db = null;
 
 const connection = () => (
