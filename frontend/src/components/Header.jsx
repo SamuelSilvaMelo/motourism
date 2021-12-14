@@ -20,7 +20,7 @@ const Header = () => {
     },
     {
       name: 'Meu Pacote',
-      path: '/about',
+      path: '/fechar-pacote',
     },
   ];
   const { pathname } = useLocation();

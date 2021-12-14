@@ -6,6 +6,7 @@ import MotorhomeDetailsCard from '../../components/MotorhomeDetailsCard';
 import Star from '../../assets/Star.svg';
 import Button from '../../components/Button';
 import Loading from '../../components/Loading';
+import { getLocalStorage, setLocalStorege } from '../../services/localStorage';
 
 const API = 'https://motourism-backend.herokuapp.com/motorhomes';
 
@@ -41,6 +42,16 @@ const MotorhomeDetails = () => {
     rating,
   } = foundMotorhome;
 
+  const setMotorHome = () => {
+    const prevStorage = getLocalStorage('package');
+
+    if (prevStorage) {
+      setLocalStorege('package', { ...prevStorage, motorhomes: { name, dailyPrice } });
+    } else {
+      setLocalStorege('package', { motorhomes: { name, dailyPrice } });
+    }
+  };
+
   return (
     <main className="text-center flex flex-col items-center font-default text-xl">
       <h1 className="text-center text-3xl my-6">{ name }</h1>
@@ -72,6 +83,7 @@ const MotorhomeDetails = () => {
         { dailyPrice }
       </p>
       <Button
+        onClick={() => setMotorHome()}
         name="Incluir no pacote"
       />
     </main>
