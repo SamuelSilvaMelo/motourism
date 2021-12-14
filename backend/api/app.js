@@ -1,5 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
+const errorMiddleware = require('./middlewares/error');
 
 const app = express();
 
@@ -10,5 +11,9 @@ app.post('/login', routes.login);
 app.post('/users', routes.createUsers);
 app.get('/itineraries', routes.getAllItineraries);
 app.get('/motorhomes', routes.getAllMotorhomes);
+
+app.use('*', (_req, res) => res.status(404).json({ message: 'Page not found' }));
+
+app.use(errorMiddleware);
 
 module.exports = app;
