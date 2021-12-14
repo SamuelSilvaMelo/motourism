@@ -10,15 +10,50 @@ O projeto foi proposto pela Hackathon entre as turmas 11 e 12 da <a href="https:
 
 ## Equipe 4:
 
-<a href="https://www.linkedin.com/in/danielbped/">Daniel Batista</a>
-
-<a href="https://www.linkedin.com/in/douglasdns/">Douglas Santana</a>
-
-<a href="https://www.linkedin.com/in/gui-pereira/">Guilherme Pereira</a>
-
-<a href="https://www.linkedin.com/in/luisffg/">Luis Fernando Fonseca</a>
-
-<a href="https://www.linkedin.com/in/samuel-silva-melo/">Samuel Melo</a>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/danielbped/">
+        <img src="https://ca.slack-edge.com/TMDDFEPFU-U01SZ8JQXRQ-8e0ccfe91d5d-512" width="100px;" alt="Foto da Lais Simenikim no GitHub"/><br>
+        <sub>
+          <a href="https://www.linkedin.com/in/danielbped/">Daniel Batista</a>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/douglasdns/">
+        <img src="https://ca.slack-edge.com/TMDDFEPFU-U01KU84DW93-fc7f8b422205-512" width="100px;" alt="Foto do Marconi Moreira no GitHub"/><br>
+        <sub>
+          <a href="https://www.linkedin.com/in/douglasdns/">Douglas Santana</a>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/gui-pereira/">
+        <img src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G668A0-35043df532b2-512" width="100px;" alt="Foto da Natalia de Souza no GitHub"/><br>
+        <sub>
+          <a href="https://www.linkedin.com/in/gui-pereira/">Guilherme Pereira</a>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/luisffg/">
+        <img src="https://ca.slack-edge.com/TMDDFEPFU-U01SZ8K0L0J-75fc4f3c65d9-512" width="100px;" alt="Foto da Natalia de Souza no GitHub"/><br>
+        <sub>
+          <a href="https://www.linkedin.com/in/luisffg/">Luis Fernando Fonseca</a>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SamuelSilvaMelo">
+        <img src="https://avatars.githubusercontent.com/u/80549416?v=4" width="100px;" alt="Foto do Samuel Melo no GitHub"/><br>
+        <sub>
+          <a href="https://github.com/SamuelSilvaMelo">Samuel Melo</a>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## A ideia:
 
@@ -70,7 +105,7 @@ Endpoints:
 
 Utilizamos a biblioteca BCrypt para criptografar os dados sensíveis.
 
-Para os testes, utilizamos as librarys: MOCHA, CHAI, SINON.
+Para os testes, utilizamos as librarys: **MOCHA**, **CHAI**, **SINON**.
 
 ![image (1)](https://user-images.githubusercontent.com/78225894/145903179-68f5f67e-b8af-4849-b363-86054a711828.png)
 
@@ -86,9 +121,12 @@ O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile Fi
 2. Entre na pasta do repositório que você acabou de clonar:
 
     * `cd motourism`
-    * `cd frontend` ou `cd backend`
 
-3. Instale as dependências e inicialize o projeto:
+3. Entre na pasta do frontend:
+
+    * `cd frontend`
+
+4. Instale as dependências e inicialize o projeto:
 
   * Instale as dependências:
     * `npm install`
