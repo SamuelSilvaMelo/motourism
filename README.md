@@ -68,7 +68,7 @@ Unimos as maravilhas do Eco Turismo com o aconchego do Motor Home.
 Prazer, somos o Motourism.
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/78225894/145897892-78a0bcda-11da-47ef-9cf6-5148e16b4410.gif" alt="Gif aplicação rodando"/>
+  <img src="./frontend/src/assets/gif-motourism.gif" alt="Gif aplicação rodando"/>
 </div>
   
 ## Desenvolvimento:
