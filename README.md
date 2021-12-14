@@ -88,7 +88,7 @@ A cobertura de testes do Front foi feita com a React Testing Library.
 2. Entre na pasta do repositório que você acabou de clonar:
 
     * `cd motourism`
-    * `cd frontend`
+    * `cd backend`
 
 3. Instale as dependências e inicialize o projeto:
 
