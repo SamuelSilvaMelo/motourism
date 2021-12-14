@@ -87,6 +87,7 @@ O Front foi desenvolvido em React e Tailwind CSS, aplicando o conceito Mobile Fi
 
     * `cd motourism`
     * `cd backend`
+    * `git pull origin frontend`
 
 3. Instale as dependências e inicialize o projeto:
 
