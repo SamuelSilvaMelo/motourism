@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import motourismAPI from '../services/motourismAPI';
 import User from '../assets/User.png';
 import Password from '../assets/Password.png';
+import MouturismDataContext from '../context/MouturismDataContext';
 
 const RegisterForm = () => {
   const [user, setUser] = useState({
@@ -15,6 +16,7 @@ const RegisterForm = () => {
     });
   };
   const navigate = useNavigate();
+  const { setNavbarLinks, navbarLinks } = useContext(MouturismDataContext);
 
   const createLogin = async () => {
     if (user.password !== user.confirmPassword) {
@@ -30,6 +32,7 @@ const RegisterForm = () => {
           email: user.email, password: user.password,
         });
         localStorage.setItem('token', token);
+        setNavbarLinks(navbarLinks.filter((link) => link.name !== 'Login'));
         navigate('/fechar-pacote');
       }
     }
