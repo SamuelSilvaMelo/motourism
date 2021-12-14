@@ -4,14 +4,15 @@ import MouturismDataContext from './MouturismDataContext';
 import motourismAPI from '../services/motourismAPI';
 
 const DataProvider = ({ children }) => {
-  const [roadMaps, setRoadMaps] = useState([]);
-  const [motorhomes, setMotorhomes] = useState([{}]);
-  const [navbarLinks, setNavbarLinks] = useState([
+  const defaultLinks = [
     { name: 'Home', path: '/' },
     { name: 'Roteiros', path: '/roteiros' },
     { name: 'Motorhomes', path: '/motorhomes' },
-    { name: 'Meu Pacote', path: '/about' },
-  ]);
+    { name: 'Meu Pacote', path: '/fechar-pacote' },
+  ];
+  const [roadMaps, setRoadMaps] = useState([]);
+  const [motorhomes, setMotorhomes] = useState([{}]);
+  const [navbarLinks, setNavbarLinks] = useState(defaultLinks);
 
   const contextValue = useMemo(() => ({
     roadMaps,
@@ -28,12 +29,6 @@ const DataProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    const defaultLinks = [
-      { name: 'Home', path: '/' },
-      { name: 'Roteiros', path: '/roteiros' },
-      { name: 'Motorhomes', path: '/motorhomes' },
-      { name: 'Meu Pacote', path: '/about' },
-    ];
     const token = localStorage.getItem('token');
     const loginLink = { name: 'Login', path: '/login' };
     if (token) {

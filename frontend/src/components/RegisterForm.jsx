@@ -1,11 +1,12 @@
 import React, { useState, useContext } from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import motourismAPI from '../services/motourismAPI';
 import User from '../assets/User.png';
 import Password from '../assets/Password.png';
 import MouturismDataContext from '../context/MouturismDataContext';
 
-const RegisterForm = () => {
+const RegisterForm = ({ setShowErrorAdvice, setErrorMessage }) => {
   const [user, setUser] = useState({
     name: '', email: '', password: '', confirmPassword: '',
   });
@@ -20,14 +21,18 @@ const RegisterForm = () => {
 
   const createLogin = async () => {
     if (user.password !== user.confirmPassword) {
-      alert('As senhas digitadas são difrentes!');
+      setErrorMessage('As senhas digitadas são difrentes!');
+      setShowErrorAdvice(true);
     } else {
       const createdUser = await motourismAPI.createUser({
         name: user.name,
         password: user.password,
         email: user.email,
       });
-      if (createdUser) {
+      if (createdUser.message) {
+        setShowErrorAdvice(true);
+        setErrorMessage(createdUser.message);
+      } else {
         const token = await motourismAPI.login({
           email: user.email, password: user.password,
         });
@@ -109,6 +114,11 @@ const RegisterForm = () => {
       </form>
     </div>
   );
+};
+
+RegisterForm.propTypes = {
+  setShowErrorAdvice: PropTypes.func.isRequired,
+  setErrorMessage: PropTypes.func.isRequired,
 };
 
 export default RegisterForm;

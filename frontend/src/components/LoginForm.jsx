@@ -1,11 +1,12 @@
 import React, { useState, useContext } from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import User from '../assets/User.png';
 import Password from '../assets/Password.png';
 import motourismAPI from '../services/motourismAPI';
 import MouturismDataContext from '../context/MouturismDataContext';
 
-const LoginForm = () => {
+const LoginForm = ({ setShowErrorAdvice, setErrorMessage }) => {
   const [user, setUser] = useState({
     email: '',
     password: '',
@@ -22,7 +23,10 @@ const LoginForm = () => {
 
   const createLogin = async () => {
     const token = await motourismAPI.login(user);
-    if (token) {
+    if (token.message) {
+      setShowErrorAdvice(true);
+      setErrorMessage(token.message);
+    } else {
       localStorage.setItem('token', token);
       setNavbarLinks(navbarLinks.filter((link) => link.name !== 'Login'));
       navigate('/fechar-pacote');
@@ -72,6 +76,11 @@ const LoginForm = () => {
       </form>
     </div>
   );
+};
+
+LoginForm.propTypes = {
+  setShowErrorAdvice: PropTypes.func.isRequired,
+  setErrorMessage: PropTypes.func.isRequired,
 };
 
 export default LoginForm;
