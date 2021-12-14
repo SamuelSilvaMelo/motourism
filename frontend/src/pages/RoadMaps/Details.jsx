@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Destinations from '../../components/Destinations';
 import Button from '../../components/Button';
 import motourismAPI from '../../services/motourismAPI';
+import { getLocalStorage, setLocalStorege } from '../../services/localStorage';
 
 const RoadMapDetails = () => {
   const { id } = useParams();
@@ -16,6 +17,16 @@ const RoadMapDetails = () => {
         setCurrentRoadMap({ ...filteredRoadMap[0] });
       });
   }, []);
+
+  const setRoadMap = () => {
+    const prevStorage = getLocalStorage('package');
+
+    if (prevStorage) {
+      setLocalStorege('package', { ...prevStorage, ...currentRoadMap });
+    } else {
+      setLocalStorege('package', { ...currentRoadMap });
+    }
+  };
 
   return (
     <main className="text-center text-font-brown">
@@ -39,7 +50,10 @@ const RoadMapDetails = () => {
         <p>{`Total a ser rodado: ${currentRoadMap.totalDistance}`}</p>
         <p>{`Dias Previstos: ${currentRoadMap.time}`}</p>
       </div>
-      <Button name="Adicionar Roteiro Completo" />
+      <Button
+        onClick={() => setRoadMap()}
+        name="Adicionar Roteiro Completo"
+      />
     </main>
   );
 };
