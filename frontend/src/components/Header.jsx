@@ -1,40 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/Logo.svg';
 import MenuButton from '../assets/MenuButton.png';
+import MouturismDataContext from '../context/MouturismDataContext';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const defaultLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Roteiros', path: '/roteiros' },
-    { name: 'Motorhomes', path: '/motorhomes' },
-    { name: 'Meu Pacote', path: '/about' },
-  ];
-  const [links, setLinks] = useState(defaultLinks);
+  const [isLogged, setIsLogged] = useState(false);
+
   const { pathname } = useLocation();
-
-  function logout() {
-    localStorage.removeItem('token');
-    window.location.reload();
-  }
-
-  const loginLink = {
-    name: 'Login',
-    path: '/login',
-    onclick: () => setLinks([...defaultLinks, loginLink]),
-  };
-
-  const isMain = () => pathname === '/';
+  const { navbarLinks = [], setNavbarLinks } = useContext(MouturismDataContext);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      setLinks(defaultLinks);
-    } else {
-      setLinks([...defaultLinks, loginLink]);
-    }
-  }, []);
+    setIsLogged(!navbarLinks.some(({ name }) => name === 'Login'));
+  }, [navbarLinks]);
+
+  function logout() {
+    const loginLink = { name: 'Login', path: '/login' };
+    const links = [...navbarLinks, loginLink];
+    setNavbarLinks(links);
+    setIsLogged(false);
+    localStorage.removeItem('token');
+    setIsOpen(false);
+  }
+
+  const isMain = () => pathname === '/';
 
   return !isMain() && (
     <header
@@ -70,13 +60,13 @@ const Header = () => {
           color: '#F8F0FB',
         }}
       >
-        {links.map((link, index) => (
+        {navbarLinks.map((link, index) => (
           <>
             <Link
               key={link.name}
               to={link.path}
               className="block px-4 py-2"
-              onClick={link.onClick ? link.onClick : () => setIsOpen(false)}
+              onClick={() => setIsOpen(false)}
               style={{
                 color: '#F8F0FB',
                 textDecoration: 'none',
@@ -84,7 +74,7 @@ const Header = () => {
             >
               {link.name}
             </Link>
-            {links[index + 1] ? (
+            {navbarLinks[index + 1] ? (
               <fieldset style={{
                 backgroundColor: '#F8F0FB', height: '1px', width: '50%', marginLeft: '10px',
               }}
@@ -92,7 +82,7 @@ const Header = () => {
             ) : null}
           </>
         ))}
-        {links.some(({ name }) => name === 'Login') ? null : (
+        {!isLogged ? null : (
           <>
             <fieldset style={{
               backgroundColor: '#F8F0FB', height: '1px', width: '50%', marginLeft: '10px',
