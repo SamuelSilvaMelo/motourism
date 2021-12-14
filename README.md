@@ -67,8 +67,10 @@ Unimos as maravilhas do Eco Turismo com o aconchego do Motor Home.
 
 Prazer, somos o Motourism.
 
-![otimized-gif](https://user-images.githubusercontent.com/78225894/145897892-78a0bcda-11da-47ef-9cf6-5148e16b4410.gif)
-
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/78225894/145897892-78a0bcda-11da-47ef-9cf6-5148e16b4410.gif" alt="Gif aplicação rodando"/>
+</div>
+  
 ## Desenvolvimento:
 
 ## Comunicação, prototipagem e organização:
@@ -81,13 +83,17 @@ Nossa comunicação foi feita através do Zoom e Slack que foram oferecidos pela
 
 A prototipagem foi feita no Figma:
 
-![figma](https://user-images.githubusercontent.com/78225894/145875236-3e90864c-2c02-4396-ab0f-8b10b5aa8dda.png)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/78225894/145875236-3e90864c-2c02-4396-ab0f-8b10b5aa8dda.png" alt="Features Figma"/>
+</div>
 
 ### Organização && divisão das features:
 
 A organização das features foram divididas no Trello:
 
-![trello-motourism](https://user-images.githubusercontent.com/78225894/145875328-a24e1ad7-dd69-4ba5-821f-808eeac9fb90.png)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/78225894/145875328-a24e1ad7-dd69-4ba5-821f-808eeac9fb90.png" alt="Card Trello"/>
+</div>
 
 ## Desenvolvimento Técnico:
 
@@ -107,7 +113,9 @@ Utilizamos a biblioteca BCrypt para criptografar os dados sensíveis.
 
 Para os testes, utilizamos as librarys: **MOCHA**, **CHAI**, **SINON**.
 
-![image (1)](https://user-images.githubusercontent.com/78225894/145903179-68f5f67e-b8af-4849-b363-86054a711828.png)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/78225894/145903179-68f5f67e-b8af-4849-b363-86054a711828.png" alt="Log de Testes"/>
+</div>
 
 ### Front-end:
 
